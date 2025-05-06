@@ -72,8 +72,8 @@ load_dotenv()
 
 # Configurações do Azure Blob Storage
 blobConnectionString = os.getenv('BLOB_CONNECTION_STRING', "SUACHAVEAZURESTORAGE")
-blobContainerName = os.getenv('BLOB_CONTAINER_NAME', "fotos")
-blobAccountName = os.getenv('BLOB_ACCOUNT_NAME', "gisdevlab1eastus1")
+blobContainerName = os.getenv('BLOB_CONTAINER_NAME', "nomedoseuconteiner")
+blobAccountName = os.getenv('BLOB_ACCOUNT_NAME', "nomedasuacontablob")
 
 # Configurações SQL Server
 SQL_SERVER = os.getenv('SQL_SERVER', "seuname.database.windows.net")
