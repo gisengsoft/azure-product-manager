@@ -1,0 +1,8 @@
+streamlit
+pyodbc
+pandas
+azure-storage-blob
+python-dotenv
+pillow
+matplotlib
+seaborn
