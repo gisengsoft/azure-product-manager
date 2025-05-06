@@ -8,8 +8,8 @@
 Um sistema completo para cadastro e gerenciamento de produtos, com upload de imagens para o Azure Blob Storage e armazenamento de dados em SQL Server, desenvolvido com Streamlit. Interface moderna com visualização em grid, sistema de busca e gerenciamento eficiente de recursos.
 
 <div align="center">
-  <img src="cadastro-de-produtos.PNG" alt="Cadastro de Produtos" width="600" />
-  <!-- Screenshot do formulário de cadastro -->->
+  <img src="screenshots-da-aplicacao.PNG" alt="Tela Principal" width="600" />
+</div>
 
 ## 📌 Funcionalidades
 
@@ -33,39 +33,37 @@ Um sistema completo para cadastro e gerenciamento de produtos, com upload de ima
 <div align="center">
   <img src="cadastro-de-produtos.PNG" alt="Cadastro de Produtos" width="600" />
   <!-- Screenshot do formulário de cadastro -->
-
-<img src="listagem-grid-produtos.PNG" alt="Listagem em Grid" width="600" />
+  
+  <img src="listagem-grid-produtos.PNG" alt="Listagem em Grid" width="600" />
   <!-- Screenshot da visão em grid com produtos -->
-
- <img src="modal-exclusao.PNG" alt="Modal de Exclusão" width="600" />
+  
+  <img src="modal-exclusao.PNG" alt="Modal de Exclusão" width="600" />
   <!-- Screenshot do modal de confirmação de exclusão -->
 </div>
 
 ## 📋 Estrutura do Projeto
 
 ```
-azure-product-manager-streamlit/
+azure-product-manager/
 ├── main.py           # Código principal com interface e lógica
 ├── .env.example      # Exemplo de variáveis de ambiente
 ├── .env              # Credenciais reais (não versionado)
 ├── .gitignore        # Para proteger credenciais
 ├── requirements.txt  # Dependências do projeto
-├── README.md         # Esta documentação
-├── LICENSE.md           # Licença MIT
-└── screenshot*.png   # Screenshots da aplicação
+├── README.MD         # Esta documentação
+├── LICENSE.md        # Licença MIT
+└── *.PNG             # Screenshots da aplicação
 ```
 
 ## 💻 Como Instalar
 
 1. **Clonar o repositório**
-   
    ```bash
    git clone https://github.com/gisengsoft/azure-product-manager.git
    cd azure-product-manager
    ```
 
 2. **Criar ambiente virtual (recomendado)**
-   
    ```bash
    python -m venv venv
    source venv/bin/activate  # Linux/Mac
@@ -73,13 +71,11 @@ azure-product-manager-streamlit/
    ```
 
 3. **Instalar dependências**
-   
    ```bash
    pip install -r requirements.txt
    ```
 
 4. **Configurar variáveis de ambiente**
-   
    - Copie o arquivo .env.example para .env
    - Preencha com suas credenciais do Azure Storage e SQL Server
 
@@ -105,20 +101,17 @@ As tabelas são criadas automaticamente pela aplicação na primeira execução.
 ## 🖱️ Como Usar
 
 1. **Executar a aplicação**
-   
    ```bash
    streamlit run main.py
    ```
 
 2. **Cadastrar Produtos**
-   
    - Acesse a aba "Cadastrar Produto"
    - Preencha os dados do produto (nome, descrição, preço, estoque)
    - Faça upload da imagem 
    - Clique em "Salvar Produto"
 
 3. **Gerenciar Produtos**
-   
    - Na aba "Listar Produtos", visualize todos os produtos em grid
    - Use a barra de pesquisa para filtrar produtos
    - Use o botão "Excluir" para remover produtos (com confirmação)
@@ -128,15 +121,12 @@ As tabelas são criadas automaticamente pela aplicação na primeira execução.
 ### Desafios e Soluções
 
 1. **Problema:** Exclusão de produtos que não funcionava corretamente
-   
    - **Solução:** Implementação de um sistema robusto de confirmação de exclusão usando o state do Streamlit e separação da lógica de exclusão em múltiplas funções
 
 2. **Problema:** Visualização em lista não era eficiente para muitos produtos
-   
    - **Solução:** Implementação de um layout em grid com CSS personalizado que utiliza melhor o espaço disponível
 
 3. **Problema:** Exposição de dados sensíveis no GitHub
-   
    - **Solução:** Implementação do sistema .env e .gitignore para proteção de credenciais
 
 ### Otimizações Implementadas
@@ -158,7 +148,7 @@ As tabelas são criadas automaticamente pela aplicação na primeira execução.
 
 ## 📜 Licença
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE.MD para detalhes.
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE.md para detalhes.
 
 ## 🔗 Links Úteis
 
